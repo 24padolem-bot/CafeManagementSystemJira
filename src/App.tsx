@@ -10,7 +10,7 @@ import { CustomerContact } from './components/customer/CustomerContact';
 import { AdminLayout } from './components/admin/AdminLayout';
 import { Category } from './types/cafe';
 import { Coffee, ShieldCheck, ArrowRightLeft, Heart } from 'lucide-react';
-
+import { JiraSection } from './components/JiraSection';
 function CafeAppContent() {
   const { activeModule, setActiveModule, session, loginAdmin } = useCafe();
   
@@ -53,14 +53,17 @@ function CafeAppContent() {
               }}
               onOpenCart={() => setIsCartOpen(true)}
             />
+<main>
+  <JiraSection />
 
-            <main>
-              {customerView === 'home' && (
-                <CustomerHome
-                  onNavigateToMenu={handleNavigateToMenu}
-                  onNavigateToOrders={() => handleNavigateToOrders()}
-                />
-              )}
+  {customerView === 'home' && (
+    <CustomerHome
+      onNavigateToMenu={handleNavigateToMenu}
+      onNavigateToOrders={() => handleNavigateToOrders()}
+    />
+  )}
+            
+          
 
               {customerView === 'menu' && (
                 <CustomerMenu
