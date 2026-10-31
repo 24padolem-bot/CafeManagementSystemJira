@@ -1,0 +1,6 @@
+{
+  "name": "Brew & Bean - Cafe Management System",
+  "description": "Artisanal Cafe Management System featuring Customer Online Ordering, Real-time Order Tracking, Admin Kitchen Console, Menu Engineering, Inventory & Sales Analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
